@@ -1,4 +1,3 @@
-/* Các kiểu CSS cho trang social impact */
 .site-content-hero {
     display: flex;
     flex-direction: column; 
@@ -57,7 +56,7 @@
 }
 
 .news-container {
-    max-height: 400px; /* Tăng chiều cao khung tin tức */
+    max-height: 400px; 
     overflow-y: auto; 
 }
 
@@ -79,7 +78,7 @@
 }
 
 .partner-logos img {
-    width: 30px; /* Giảm kích thước ảnh đối tác */
-    height: 30px; /* Giảm kích thước ảnh đối tác */
-    border-radius: 50%; /* Hình tròn */
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
 }

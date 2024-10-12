@@ -28,7 +28,6 @@ body {
 /*header section*/
 
 .container {
-  /*border: 1px black solid;*/
   height: 300px;
   aspect-ratio: 10/6;
   position: absolute;
@@ -72,7 +71,6 @@ header>.navigation_header_container {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  /*box-shadow: 0 4px 2px -2px gray;*/
 
   img {
     max-height: 32px;

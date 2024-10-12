@@ -1,6 +1,3 @@
-/* contact.css */
-
-/* Reset CSS mặc định của trình duyệt */
 * {
     margin: 0;
     padding: 0;
@@ -8,31 +5,31 @@
   }
   
   body {
-    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    overflow-x: hidden; 
   }
   
   .contact-container {
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; 
     align-items: center;
-    width: 100vw; /* Mở rộng ra toàn bộ chiều rộng viewport */
+    width: 100vw; 
     padding: 20px;
-    flex-direction: column; /* Xếp các phần tử theo cột */ 
-    gap: 50px; /* Tăng khoảng cách giữa team-members và contact-info */
+    flex-direction: column; 
+    gap: 50px; 
   }
   
   .team-members {
     display: grid;
-    grid-template-columns: repeat(3, 3fr); /* 3 cột, mỗi cột chiếm 3 phần bằng nhau */
+    grid-template-columns: repeat(3, 3fr); 
     grid-template-areas: 
         "member1 member2 member3"
         "member4 member5 ."; 
     margin: auto; 
     justify-items: center;
-    gap: 50px; /* Tăng khoảng cách giữa các thành viên */
-    width: 90%; /* Giới hạn chiều rộng tối đa */
+    gap: 50px; 
+    width: 90%; 
     max-width: 1200px; 
-    z-index: 1; /* Đảm bảo team-members hiển thị trên contact-info */
+    z-index: 1; 
   }
   
   .team-member:nth-child(1) { grid-area: member1; }
@@ -46,39 +43,39 @@
     border: 1px solid #ddd; 
     padding: 50px;
     border-radius: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng */
-    transition: transform 0.2s ease; /* Thêm hiệu ứng hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease; 
     display: flex; 
-    flex-direction: row; /* Xếp ảnh và tên theo chiều ngang */
-    align-items: center; /* Canh giữa ảnh và tên theo chiều dọc */
+    flex-direction: row;
+    align-items: center; 
   }
   
   .team-member:hover {
-    transform: translateY(-5px); /* Nâng thành viên lên khi hover */
+    transform: translateY(-5px); 
   }
   
   .team-member img {
-    width: 150px; /* Tăng kích thước ảnh */
+    width: 150px; 
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 30px; /* Khoảng cách giữa ảnh và tên */
+    margin-right: 30px; 
   }
   
   .member-info {
-    text-align: left; /* Canh lề trái cho chữ */
+    text-align: left; 
   }
   
   .contact-info {
     display: flex;
-    background-color: #000033; /* Màu xanh đậm */
+    background-color: #000033; 
     color: white;
     padding: 20px;
     text-align: center;
-    width: 100vw; /* Chiếm toàn bộ chiều rộng viewport */
-    position: absolute; /* Sử dụng position absolute để cố định vị trí */
-    bottom: -215px; /* Sát lề dưới */
-    left: 0; /* Sát lề trái */
+    width: 100vw; 
+    position: absolute; 
+    bottom: -215px;
+    left: 0;
   }
   
   .contact-details p {
