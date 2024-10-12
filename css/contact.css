@@ -1,0 +1,56 @@
+/* contact.css */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    flex-direction: column; /* Xếp các phần tử theo cột */ 
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    grid-template-areas: 
+        "member1 member2 member3"
+        "member4 member5 ."; 
+    gap: 20px;
+    width: fit-content; /*  Điều chỉnh chiều rộng team-members  */
+}
+
+.team-member:nth-child(1) { grid-area: member1; }
+.team-member:nth-child(2) { grid-area: member2; }
+.team-member:nth-child(3) { grid-area: member3; }
+.team-member:nth-child(4) { grid-area: member4; }
+.team-member:nth-child(5) { grid-area: member5; }
+
+.team-member {
+    text-align: center;
+    border: 1px solid #ddd; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    background-color: #000033; /* Màu xanh đậm */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    color: white;
+    text-decoration: none;
+}

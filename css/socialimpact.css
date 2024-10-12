@@ -1,0 +1,85 @@
+/* Các kiểu CSS cho trang social impact */
+.site-content-hero {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.social-impact-content {
+    display: flex; 
+    gap: 20px;
+    width: 100%; 
+}
+
+.main-content {
+    flex: 2;  
+    width: 60%; 
+}
+
+.image-gallery {
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.image-row {
+    display: flex;
+    gap: 10px; 
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.small-images img {
+  width: 100%;
+  height: auto;
+}
+
+.news-updates {
+    width: 30%; 
+    flex: 0 0 30%;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px; 
+    border-radius: 5px;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.news-container {
+    max-height: 400px; /* Tăng chiều cao khung tin tức */
+    overflow-y: auto; 
+}
+
+.news-updates ul {
+    list-style: disc; 
+    margin-left: 20px; 
+}
+
+.news-updates li {
+    margin-bottom: 10px; 
+    text-align: right; 
+}
+
+.news-updates li img {
+    width: 80px; 
+    height: auto;
+    float: right; 
+    margin-left: 10px;
+}
+
+.partner-logos img {
+    width: 30px; /* Giảm kích thước ảnh đối tác */
+    height: 30px; /* Giảm kích thước ảnh đối tác */
+    border-radius: 50%; /* Hình tròn */
+}
