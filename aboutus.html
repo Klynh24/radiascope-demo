@@ -27,27 +27,24 @@
           <li class="site-nav-list-item">
             <a href="aboutus.html">About Us</a>
             <ul class="dropdown">
-              <li><a href="#">Mục a</a></li>
-              <li><a href="#">Mục b</a></li>
-              <li><a href="#">Mục c</a></li>
+              <li><a href="#">Enhance Teleradiology</a></li>
+                        <li><a href="#">Comprehensive Healthcare</a></li>
+                        <li><a href="#">Proven Results</a></li>
+                        <li><a href="#">A Global Collaboration</a></li>
+                        <li><a href="#">A Vision for Tomorrow</a></li>
             </ul>
           </li>
           <li class="site-nav-list-item">
             <a href="">Product</a>
-            <ul class="dropdown">
-              <li><a href="#">Mục a</a></li>
-              <li><a href="#">Mục b</a></li>
-              <li><a href="#">Mục c</a></li>
-            </ul>
           </li>
           <li class="site-nav-list-item">
-            <a href="">Social Impact</a>
+            <a href="socialimpact.html">Social Impact</a>
           </li>
           <li class="site-nav-list-item">
             <a href="">Demonstration</a>
           </li>
           <li class="site-nav-list-item">
-            <a href="">Contact</a>
+            <a href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -121,12 +118,13 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+      
       <section class="endorsement">
         <div class="endorsement-container">
           <div class="endorsement-content"> 
             <div class="booking-form"> 
               <h3>Book a Demo</h3>
-              <form id="demo-form" action="#" method="post">
+              <form id="demo-form" action="/process_form" method="post">
                 <div class="form-group">
                   <label for="name">Họ và tên:</label>
                   <input type="text" id="name" name="name" required>
@@ -146,6 +144,64 @@
                 <button type="submit">Gửi</button>
               </form>
             </div>
+      
+            <div class="Reviews_box">
+              <div id="slide">
+      
+                <div class="card">
+                  <div class="profile">
+                    <img src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-afro-professional-doctor-png-image_10148632.png" alt="doctor1">
+                    <div>
+                      <h3>doctor1</h3>
+                      <p>Doctor......</p>
+                    </div>
+                  </div>
+                  <p>Hello Friends, I am .....</p>
+                </div>
+      
+                <div class="card">
+                  <div class="profile">
+                    <img src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-afro-professional-doctor-png-image_10148632.png" alt="doctor2">
+                    <div>
+                      <h3>doctor2</h3>
+                      <p>Doctor......</p>
+                    </div>
+                  </div>
+                  <p>Hello Friends, I am ......</p>
+                </div>
+      
+                <div class="card">
+                  <div class="profile">
+                    <img src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-afro-professional-doctor-png-image_10148632.png" alt="doctor3">
+                    <div>
+                      <h3>doctor3</h3>
+                      <p>Doctor....</p>
+                    </div>
+                  </div>
+                  <p>Hello Friends, I am ......</p>
+                </div>
+      
+                <div class="card">
+                  <div class="profile">
+                    <img src="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-afro-professional-doctor-png-image_10148632.png" alt="doctor4">
+                    <div>
+                      <h3>doctor4</h3>
+                      <p>Doctor.....</p>
+                    </div>
+                  </div>
+                  <p>Hello Friends, I am .......</p>
+                </div>
+      
+              </div>
+      
+              <div class="slidebar">
+                <img src="media/upArrowb.png" alt="Up Arrow" id="upArrowb">
+                <img src="media/downArrowb.png" alt="Down Arrow" id="downArrowb">
+              </div>
+            </div>
+      
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -178,6 +234,30 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    let slide = document.getElementById('slide');
+    let upArrowb = document.getElementById('upArrowb');
+    let downArrowb = document.getElementById('downArrowb');
+
+    var a = 0;
+    upArrowb.addEventListener('click', () => {
+
+      if (a < 0) {
+        a = a + 300;
+        slide.style.top = a + "px";
+
+      }
+
+    })
+
+    downArrowb.addEventListener('click', () => {
+
+      if (a > "-900") {
+        a = a - 300;
+        slide.style.top = a + "px";
+
+      }
+
+    })
   </script>
 </body>
 </html>

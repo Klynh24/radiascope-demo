@@ -1,56 +1,91 @@
 /* contact.css */
-.contact-container {
+
+/* Reset CSS mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+  }
+  
+  .contact-container {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center;
-    gap: 20px;
-    padding: 30px;
+    width: 100vw; /* Mở rộng ra toàn bộ chiều rộng viewport */
+    padding: 20px;
     flex-direction: column; /* Xếp các phần tử theo cột */ 
-}
-
-.team-members {
+    gap: 50px; /* Tăng khoảng cách giữa team-members và contact-info */
+  }
+  
+  .team-members {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    grid-template-columns: repeat(3, 3fr); /* 3 cột, mỗi cột chiếm 3 phần bằng nhau */
     grid-template-areas: 
         "member1 member2 member3"
         "member4 member5 ."; 
-    gap: 20px;
-    width: fit-content; /*  Điều chỉnh chiều rộng team-members  */
-}
-
-.team-member:nth-child(1) { grid-area: member1; }
-.team-member:nth-child(2) { grid-area: member2; }
-.team-member:nth-child(3) { grid-area: member3; }
-.team-member:nth-child(4) { grid-area: member4; }
-.team-member:nth-child(5) { grid-area: member5; }
-
-.team-member {
+    margin: auto; 
+    justify-items: center;
+    gap: 50px; /* Tăng khoảng cách giữa các thành viên */
+    width: 90%; /* Giới hạn chiều rộng tối đa */
+    max-width: 1200px; 
+    z-index: 1; /* Đảm bảo team-members hiển thị trên contact-info */
+  }
+  
+  .team-member:nth-child(1) { grid-area: member1; }
+  .team-member:nth-child(2) { grid-area: member2; }
+  .team-member:nth-child(3) { grid-area: member3; }
+  .team-member:nth-child(4) { grid-area: member4; }
+  .team-member:nth-child(5) { grid-area: member5; }
+  
+  .team-member {
     text-align: center;
     border: 1px solid #ddd; 
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px; 
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng */
+    transition: transform 0.2s ease; /* Thêm hiệu ứng hover */
+    display: flex; 
+    flex-direction: row; /* Xếp ảnh và tên theo chiều ngang */
+    align-items: center; /* Canh giữa ảnh và tên theo chiều dọc */
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px); /* Nâng thành viên lên khi hover */
+  }
+  
+  .team-member img {
+    width: 150px; /* Tăng kích thước ảnh */
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.contact-info {
+    margin-right: 30px; /* Khoảng cách giữa ảnh và tên */
+  }
+  
+  .member-info {
+    text-align: left; /* Canh lề trái cho chữ */
+  }
+  
+  .contact-info {
+    display: flex;
     background-color: #000033; /* Màu xanh đậm */
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-.contact-details p {
+    width: 100vw; /* Chiếm toàn bộ chiều rộng viewport */
+    position: absolute; /* Sử dụng position absolute để cố định vị trí */
+    bottom: -215px; /* Sát lề dưới */
+    left: 0; /* Sát lề trái */
+  }
+  
+  .contact-details p {
     margin-bottom: 10px;
-}
-
-.contact-details a {
+  }
+  
+  .contact-details a {
     color: white;
     text-decoration: none;
-}
+  }

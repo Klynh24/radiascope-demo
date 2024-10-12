@@ -1,303 +1,3 @@
-/*universal declaration*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  background-image: linear-gradient(#ffffff, #76adbf);
-  min-height: 100vh;
-
-}
-
-/*header section*/
-
-.container {
-  /*border: 1px black solid;*/
-  height: 300px;
-  aspect-ratio: 10/6;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: fit-content;
-}
-
-.noticeBar {
-  background: #4379F2;
-  padding: 15px;
-  text-align: center;
-}
-
-.noticeBar p {
-  color: white;
-  font-weight: bold;
-}
-
-header {
-  height: 92px;
-  position: sticky;
-  background: #D1E9F6;
-  border-bottom: 1px solid #00000010;
-}
-
-header>.navigation_header_container {
-  padding: 0 12.5vw;
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-header-link {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  /*box-shadow: 0 4px 2px -2px gray;*/
-
-  img {
-    max-height: 32px;
-  }
-
-  p {
-    font-family: "Times New Roman", serif;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-}
-
-.site-nav-list {
-  display: flex;
-  gap: 2.5vw;
-}
-
-.site-nav-list>li {
-  font-weight: 500;
-
-  a {
-    color: #282828;
-  }
-}
-
-.additionalMenus {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  .search_bar {
-    width: 12vw;
-    height: 2rem;
-    border: 2px black solid;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    padding: 0 5px;
-  }
-
-  .language {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    >span:first-child {
-      scale: 1.25;
-    }
-
-    p {
-      font-weight: bolder;
-      font-size: 1.25rem;
-    }
-  }
-}
-
-/*site content*/
-
-.site-content-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-section.site-content-hero {
-  display: grid;
-  grid-template-columns: 9fr 7fr;
-  gap: 1rem;
-  align-items: center;
-
-  >div:first-child {
-    text-align: right;
-
-    * {
-      font-style: italic;
-    }
-
-    h1:first-child {
-      margin-left: 25%;
-      text-align: left;
-    }
-
-    h1 {
-      font-size: 2.25rem;
-      padding: 1rem 0;
-    }
-
-    p {
-      font-size: 1.25rem;
-      margin-left: 25%;
-    }
-
-    .radiaScopeBanner {
-      color: #0F67B1;
-    }
-
-    button {
-      height: 3.5rem;
-      width: 50%;
-      background: #0F67B1;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      font-weight: bolder;
-      border-radius: 1.75rem;
-    }
-  }
-}
-
-.site-content-gallery {
-  width: 100%;
-  height: 700px;
-  /* Giữ chiều cao ban đầu */
-  position: relative;
-}
-
-.photos {
-  position: absolute;
-  aspect-ratio: 16/9;
-  /* Giữ tỷ lệ ảnh */
-  width: auto;
-  /* Điều chỉnh độ rộng */
-  max-width: 100%;
-  /* Đảm bảo không vượt quá container */
-  height: auto;
-  /* Giữ nguyên chiều cao tự động */
-}
-
-/* Điều chỉnh vị trí cho từng ảnh */
-#photo1 {
-  background: #0F67B1;
-  aspect-ratio: 16/9;
-  height: 140px;
-  right: 300px;
-  top: 50px;
-}
-
-#photo2 {
-  background: #0F67B1;
-  aspect-ratio: 16/9;
-  height: 160px;
-  right: 300px;
-  top: 200px;
-}
-
-#photo3 {
-  background: #0F67B1;
-  aspect-ratio: 9/16;
-  height: 220px;
-  left: 320px;
-  top: 50px;
-}
-
-#photo4 {
-  background: #0F67B1;
-  aspect-ratio: 16/9;
-  height: 120px;
-  left: 320px;
-  top: 280px;
-}
-
-#photo5 {
-  background: #0F67B1;
-  aspect-ratio: 16/9;
-  height: 240px;
-  left: 30px;
-  top: 420px;
-}
-
-/* Sử dụng media query để điều chỉnh khi màn hình nhỏ */
-@media (max-width: 768px) {
-  .site-content-hero {
-    grid-template-columns: 1fr;
-    /* Chuyển sang 1 cột */
-    gap: 0.5rem;
-    /* Giảm khoảng cách */
-  }
-
-  .site-content-gallery {
-    height: auto;
-    /* Chiều cao tự động */
-    position: static;
-    /* Bỏ định vị */
-  }
-
-  .photos {
-    position: static;
-    /* Bỏ định vị tuyệt đối */
-    max-width: 90%;
-    /* Giảm kích thước ảnh */
-    margin: 0 auto 1rem;
-    /* Căn giữa ảnh */
-  }
-}
-
-/* Hiệu ứng hover cho các mục trong navbar */
-.site-nav-list-item a {
-  position: relative;
-  transition: text-shadow 0.3s ease;
-}
-
-.site-nav-list-item a:hover {
-  text-shadow: 0 0 15px rgba(67, 121, 242, 1);
-  /* Hiệu ứng hào quang sáng hơn */
-  color: white;
-  /* Không đổi màu chữ */
-}
-
-.site-nav-list-item ul.dropdown {
-    display: none; /* Ẩn menu con mặc định */
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Đảm bảo menu con hiển thị trên các phần tử khác */
-  }
-
-  .site-nav-list-item:hover ul.dropdown {
-    display: block;
-    /* Hiển thị menu con khi hover */
-  }
-  
-  .site-nav-list-item ul.dropdown li {
-    padding: 10px;
-  }
-  
   .hero-banner {
     background-color: #181818;
     /* Màu nền tối hơn */
@@ -544,7 +244,8 @@ section.site-content-hero {
 
   /* ... (Các CSS khác) ... */
   .endorsement {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   
@@ -597,15 +298,25 @@ section.site-content-hero {
   
   .endorsement-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi cần thiết */
+    align-items: flex-start; 
+    gap: 20px; 
+    width: 90%;
+  }
+
+  .endorsement-container {
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .booking-form {
-    width: 80%; 
+    order: 1;
+    width: 58%; 
     margin-right: 30px;
-    padding: 20px;
+    padding: 10px;
     background-image: linear-gradient(to right, #76adbf, #7783ac);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -669,111 +380,121 @@ section.site-content-hero {
   }
   
   .booking-form button:hover {
-    background-color:   
+    background-color: 
    #f0f0f0;
     /* Màu nút submit khi hover */
   }
-  
-  .endorsement-cards {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    background-color: transparent;
+
+  *{
+    padding:0;
+    margin:0;
 }
-
+.container{
   
-  .endorsement-card {
-    padding: 30px;
-  text-align: center;
-  /* Loại bỏ nền trắng */ 
-  background-image: linear-gradient(to bottom right, #f0f0f0, #ffffff);
-  border-radius: 25px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .endorsement-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .endorsement-card img {
-    max-width: 100%; /* Hình ảnh vừa vặn với card */
-  height: 80px; 
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  }
-
-  .endorsement-slider {
+}
+.container h1{
+    font-size: 30px;
     position: relative;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    overflow: hidden; /* Ẩn phần ngoài */
-}
+    margin-bottom: 70px;
 
-.endorsement-card {
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.container h1::after{
+    content: "";
+    width:150px;
+    height: 3px;
+    background:linear-gradient(to right,#e42315,#ec650b,#9934eb);
     position: absolute;
-    transition: transform 0.5s ease; /* Hiệu ứng trượt */
+    bottom:-10px;
+    left:50%;
+    transform: translateX(-50%);
 }
+.Reviews_box{
+    order: 2;
+    display: flex;
+    width: 30%;
+    height: 300px;
+    margin-top: 70px; 
+    margin-left: 40px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+    overflow: hidden;
 
-.quote {
-    font-style: italic;
-    font-size: 18px;
-    margin-bottom: 20px;
+    
 }
+#slide{
+    width:100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.card{
+    height: 300px;
+    color:#777;
+    line-height: 22px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding:40px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profile img{
+    width:100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile h3{
+    color:#9934eb;
+    margin-bottom: 8px;
+    font-size: 21px;
 
-.profile {
+}
+.slidebar{
+    width: 60px;
+    height: 100%;
+    padding:15px 0px;
+    box-sizing: border-box;
+    background-color: #6b34eb;
+    position: absolute;
+    right: 0;
+    top:0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
-
-.doctor-image {
-    width: 50px;
-    height: 50px;
+.slidebar img{
+    width: 25px;
+    height: 25px;
+    padding:5px;
+    background-color: #fff;
     border-radius: 50%;
-    margin-bottom: 15px;
 }
-
-.doctor-name {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 5px 0;
+.card::before{
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-bottom-right-radius: 100%;
+    position: absolute;
+    background-color: #6b34eb;
+    top:0;
+    left:0;
+    z-index: -1;
 }
-
-.specialty, .hospital {
-    font-size: 16px;
-    color: #555;
-    margin: 3px 0;
+.card p{
+    font-size: 18px;
 }
-
-/* ... (Các thuộc tính CSS khác) ... */
-
-.endorsementSwiper .swiper-slide .endorsement-card {
-  display: block; /* Đảm bảo các card hiển thị */
-  padding: 30px;
-  text-align: center;
-  background-image: linear-gradient(to bottom right, #f0f0f0, #ffffff);
-  border-radius: 25px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px; /* Thêm khoảng cách giữa các card */
-}
-
-.endorsementSwiper .swiper-pagination {
-  bottom: -20px; /* Vị trí của pagination */
-}
-
-.endorsementSwiper .swiper-button-prev, 
-.endorsementSwiper .swiper-button-next {
-  color: #4379F2;
-  font-size: 2rem;
-  top: 40%; /* Điều chỉnh vị trí của nút prev/next */
+::selection{
+    color:white;
+    background-color: #6b34eb;
 }
   
   
