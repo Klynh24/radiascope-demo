@@ -1,0 +1,24 @@
+{
+  "name": "radiascope-demo",
+  "version": "1.0.0",
+  "description": "demonstration website",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klynh24/radiascope-demo.git"
+  },
+  "keywords": [
+    "radiascope",
+    "medical",
+    "c"
+  ],
+  "author": "klynh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klynh24/radiascope-demo/issues"
+  },
+  "homepage": "https://github.com/Klynh24/radiascope-demo#readme"
+}
