@@ -292,7 +292,7 @@
     width: 58%;
     margin-right: 30px;
     padding: 10px;
-    background-image: linear-gradient(to right, #76adbf, #7783ac);
+    background-image: linear-gradient(to right, #062e85,#062F85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -410,7 +410,7 @@
     margin-right: 20px;
 }
 .profile h3 {
-    color: #9934eb;
+    color: #062F85;
     margin-bottom: 8px;
     font-size: 21px;
 }
@@ -419,7 +419,7 @@
     height: 100%;
     padding: 15px 0px;
     box-sizing: border-box;
-    background-color: #6b34eb;
+    background-color: #062F85;
     position: absolute;
     right: 0;
     top: 0;
@@ -441,7 +441,7 @@
     height: 110px;
     border-bottom-right-radius: 100%;
     position: absolute;
-    background-color: #6b34eb;
+    background-color: #062F85;
     top: 0;
     left: 0;
     z-index: -1;
@@ -451,5 +451,5 @@
 }
 ::selection {
     color: white;
-    background-color: #6b34eb;
+    background-color: #062F85;
 }

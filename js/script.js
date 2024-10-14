@@ -57,4 +57,26 @@ var endorsementSwiper = new Swiper(".endorsementSwiper", {
     },
 });
 
-
+document.addEventListener('DOMContentLoaded', (event) => {
+    const sustainableGoals = document.querySelectorAll('.goal h3');
+  
+    sustainableGoals.forEach(goal => {
+      const nextSibling = goal.nextElementSibling; // Lấy phần tử ul liền kề
+      const goalItem = goal.parentNode; // Lấy phần tử cha .goal
+  
+      goalItem.addEventListener('mouseover', () => {
+        goal.style.color = '#c2e7fe'; // Màu khi di chuột qua
+        goal.style.cursor = 'pointer'; // Thay đổi con trỏ chuột
+        if (nextSibling && nextSibling.tagName === 'UL') {
+          nextSibling.style.display = 'block'; // Hiển thị danh sách
+        }
+      });
+  
+      goalItem.addEventListener('mouseout', () => {
+        goal.style.color = '#062F85'; // Màu mặc định
+        if (nextSibling && nextSibling.tagName === 'UL') {
+          nextSibling.style.display = 'none'; // Ẩn danh sách
+        }
+      });
+    });
+  });
