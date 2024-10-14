@@ -5,22 +5,22 @@
   }
   
   .social-impact-content {
-    display: grid; /* Sử dụng grid layout */
-    grid-template-columns: 70% 30%; /* Điều chỉnh tỷ lệ giữa nội dung chính và tin tức */
+    display: grid; 
+    grid-template-columns: 70% 30%; 
     gap: 20px;
   }
   
   .main-content {
-    color: #010E1E; /* Màu chữ cho nội dung chính */
+    color: #010E1E; 
   }
   
   .main-content h1 {
-    color: #06275B; /* Màu chữ cho tiêu đề h1 */
+    color: #06275B; 
     font-size: 2.5rem;
   }
   
   .main-content h3 {
-    color: #062F85; /* Màu chữ cho tiêu đề h3 */
+    color: #062F85; 
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
@@ -37,7 +37,7 @@
   
   .goals-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cột cho các mục tiêu */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
   }
   
@@ -52,7 +52,7 @@
   }
   
   .goal ul {
-    display: none; /* Ẩn danh sách */
+    display: none; 
     text-align: center;
     list-style: none;
     padding: 0;

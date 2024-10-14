@@ -61,21 +61,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const sustainableGoals = document.querySelectorAll('.goal h3');
   
     sustainableGoals.forEach(goal => {
-      const nextSibling = goal.nextElementSibling; // Lấy phần tử ul liền kề
-      const goalItem = goal.parentNode; // Lấy phần tử cha .goal
+      const nextSibling = goal.nextElementSibling; 
+      const goalItem = goal.parentNode; 
   
       goalItem.addEventListener('mouseover', () => {
-        goal.style.color = '#c2e7fe'; // Màu khi di chuột qua
-        goal.style.cursor = 'pointer'; // Thay đổi con trỏ chuột
+        goal.style.color = '#c2e7fe'; 
+        goal.style.cursor = 'pointer'; 
         if (nextSibling && nextSibling.tagName === 'UL') {
-          nextSibling.style.display = 'block'; // Hiển thị danh sách
+          nextSibling.style.display = 'block'; 
         }
       });
   
       goalItem.addEventListener('mouseout', () => {
-        goal.style.color = '#062F85'; // Màu mặc định
+        goal.style.color = '#062F85'; 
         if (nextSibling && nextSibling.tagName === 'UL') {
-          nextSibling.style.display = 'none'; // Ẩn danh sách
+          nextSibling.style.display = 'none'; 
         }
       });
     });
