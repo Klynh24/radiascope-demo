@@ -1,0 +1,180 @@
+body {
+    background-image: linear-gradient(#f7fcfd, #c2e7fe);
+}
+
+.site-content-title {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.site-content-title-wrapper {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #062F85;
+    text-align: center;
+}
+
+.site-content-body {
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 100px;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 4rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.content-hero {
+    display: grid;
+
+    grid-template-columns: .55fr .45fr;
+    gap: 5px;
+}
+
+.hero-image-holder {
+    width: 100%; /* Adjust the width as needed */
+    height: 450px;
+    background-image: url("../media/ct_scan.jpeg");
+    background-size: cover; /* Or contain, depending on your preference */
+    background-position: center;
+
+}
+
+.best-bar-websites {
+    font-size: 2.875rem;
+    padding-bottom: .5rem;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0;
+    line-height: 2.9rem;
+}
+
+article {
+    padding-top: 2.25rem;
+    margin-top: 2.25rem;
+
+    text-align: left;
+}
+
+.socials-bar {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    scale: 0.8;
+    margin: 0 5px;
+}
+
+.social-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.biography-content > p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.33rem;
+
+}
+
+.product-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    text-align: center;
+
+    >* {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1.5rem;
+    }
+}
+
+.product-cell {
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 450px;
+    border: 1px solid black;
+    background: #a7e0f8;
+    border-radius: .5rem;
+    .product-cell-img {
+        width: inherit;
+        height: 60%;
+    }
+    .product-cell-text {
+        text-align: left;
+        padding-top: 2rem;
+        width: inherit;
+        height: 40%;
+        .product-cell-text-heading {
+            font-size: 1.5rem;
+        }
+        .product-cell-text-price {
+            padding-top: 0.25rem;
+            color: #007aff;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .product-cell-text-desc {
+            padding-top: .25rem;
+            font-size: .95rem;
+        }
+    }
+}
+
+.product-cell-img {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%;
+    background-size: cover; /* Or contain, depending on your preference */
+    background-position: center;
+}
+
+#cell-img-1 {
+    background-image: url("../media/Screenshot 2024-06-20 143337-2.png");
+}
+
+#cell-img-2 {
+    background-image: url("../media/3d.png");
+}
+#cell-img-3 {
+    background-image: url("../media/surgery.png");
+}
+
+.why-are-best-list {
+    padding: 0;
+    background: rgba(254, 249, 242, 0.74);
+    border: #02182b 4px solid;
+    border-radius: .90rem;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    > * {
+        height: inherit;
+    }
+
+    .list-header {
+        padding: 2.5rem;
+        height: calc(100% - 7px);
+        border-radius: .75rem;
+        background: #08C2FF;
+    }
+
+    .list-item {
+        padding: 2.5rem;
+    }
+}

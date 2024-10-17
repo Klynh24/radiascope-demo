@@ -102,6 +102,7 @@
     height: auto;
     margin-right: 0;
     margin-top: 15px;
+    z-index: -100;
 }
 
 /* Banner 2 */
@@ -396,7 +397,7 @@
     box-sizing: border-box;
     background-color: #fff;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     padding: 40px;
 }
 .profile {
