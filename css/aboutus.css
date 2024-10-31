@@ -454,3 +454,21 @@
     color: white;
     background-color: #062F85;
 }
+
+@media (max-width: 768px) {
+    .endorsement-content {
+      flex-direction: column; /* Xếp các phần tử con theo chiều dọc */
+    }
+  
+    .booking-form {
+      width: 90%; /* Điều chỉnh chiều rộng form */
+      margin: 20px auto; /* Căn giữa form */
+      order: 0; /* Hiển thị form trước */
+    }
+  
+    .Reviews_box {
+      width: 90%; /* Điều chỉnh chiều rộng Reviews_box */
+      margin: 20px auto; /* Căn giữa Reviews_box */
+      order: 1; /* Hiển thị Reviews_box sau */
+    }
+  }

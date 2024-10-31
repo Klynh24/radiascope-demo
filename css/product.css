@@ -41,10 +41,10 @@ body {
 }
 
 .hero-image-holder {
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     height: 450px;
     background-image: url("../media/ct_scan.jpeg");
-    background-size: cover; /* Or contain, depending on your preference */
+    background-size: cover; 
     background-position: center;
 
 }
@@ -137,9 +137,9 @@ article {
 }
 
 .product-cell-img {
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     height: 100%;
-    background-size: cover; /* Or contain, depending on your preference */
+    background-size: cover; 
     background-position: center;
 }
 
@@ -177,4 +177,137 @@ article {
     .list-item {
         padding: 2.5rem;
     }
+}
+
+@media (max-width: 768px) {
+    .site-content-title {
+        padding: 0; 
+    }
+    
+    .site-content-title-wrapper {
+        flex-direction: column; 
+        padding: 1rem; 
+        border: none; 
+        align-items: center; 
+    }
+    
+    .site-content-body {
+        padding: 1rem; 
+    }
+    
+    .content-hero {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+    }
+    
+    .hero-image-holder {
+        height: 300px; 
+    }
+    
+    .best-bar-websites {
+        font-size: 2rem; 
+        line-height: 2.5rem; 
+    }
+    
+    article {
+        padding-top: 1rem; 
+        margin-top: 1rem; 
+    }
+    
+    .socials-bar {
+        width: 100%; 
+        justify-content: center; 
+        margin-top: 1rem; 
+    }
+    
+    .product-wrapper {
+        grid-template-columns: 1fr; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-wrapper > * { 
+        border: none;
+        padding: 1rem 0;
+    }
+    
+    .product-cell {
+        height: auto; 
+        padding: 2rem 1rem; 
+        word-wrap: break-word; 
+    }
+    
+    .product-cell h2 { 
+        font-size: 1.2rem;  
+
+    .why-are-best-list {
+        border: none; 
+        grid-template-columns: 1fr; 
+        height: auto; 
+    }
+    
+    .why-are-best-list .list-header {
+        padding: 1.5rem; 
+    }
+    
+    .why-are-best-list .list-item {
+        padding: 1.5rem; 
+    }
+    
+    .endorsement-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .booking-form {
+        width: 90%;
+        margin: 20px auto;
+        order: 0;
+    }
+    
+    .Reviews_box {
+        width: 90%;
+        margin: 20px auto;
+        order: 1;
+    }
+
+    .product-wrapper-soft {
+        margin-bottom: 3rem; 
+    }
+
+    .product-wrapper-soft h1 {
+        padding-top: 2rem;
+        order: 1;
+    }
+
+    .product-wrapper-hard {
+        display: block;
+    }
+
+    .product-wrapper-hard .product-cell-img { 
+        position: relative; 
+    }
+    
+    .product-wrapper-hard .product-cell-img::before {
+        content: '';
+        background-image: url("../media/surgery.png"); 
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 90%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2; 
+    }
+    
+    .product-wrapper-hard #cell-img-3 {
+        background-image: none; 
+    }
+
+    .software-grid {
+        order: 0;
+    }
+}
 }

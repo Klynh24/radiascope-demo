@@ -104,7 +104,80 @@
     margin-right: 10px;
   }
   .news-updates li:hover {
-    background-color: #f0f0f0; /* Thay đổi màu nền khi hover */
-    transform: translateY(-2px); /* Di chuyển lên trên một chút khi hover */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Thêm đổ bóng khi hover */
+    background-color: #f0f0f0; 
+    transform: translateY(-2px); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
   }
+
+  /* socialimpact.css */
+  @media (max-width: 768px) {
+    .site-content-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-impact-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .main-content {
+      text-align: center;
+    }
+  
+    .main-content h1 {
+      font-size: 2rem;
+      white-space: nowrap;
+    }
+  
+    .main-content > .button {
+      display: block;
+      margin: 20px auto;
+      width: fit-content;
+      text-align: center;
+    }
+  
+    .goals-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 100%; 
+    }
+  
+    .news-updates {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: auto;
+      margin-top: -190px;
+    }
+  
+    .news-updates li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .news-updates li img {
+      margin-bottom: 10px;
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center; 
+      width: 100%;
+      margin-top: 20px; 
+      margin-left: 100px;
+    }
+  
+    .button {
+      width: fit-content;
+      display: inline-block;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  
