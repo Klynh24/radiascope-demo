@@ -111,7 +111,7 @@
   /* Banner 2 */
   .swiper-slide#banner2 .banner-text {
     position: absolute;
-    top: 30%; /* Điều chỉnh vị trí top */
+    top: 30%; 
     left: 40%;
     transform: translateY(-50%);
     text-align: left;
@@ -129,7 +129,7 @@
   /* Banner 3 */
   .swiper-slide#banner3 .banner-text {
     position: absolute;
-    top: 30%; /* Điều chỉnh vị trí top */
+    top: 30%; 
     left: 40%;
     transform: translateY(-50%);
     text-align: left;
@@ -154,7 +154,7 @@
   
   .swiper-slide#banner4 .team-members {
     z-index: 2; 
-    margin-top: 30px; /* Điều chỉnh margin-top */
+    margin-top: 30px; 
     width: 100%; 
   }
   
@@ -166,7 +166,7 @@
   /* Banner 5 */
   .swiper-slide#banner5 .banner-text {
     position: absolute;
-    top: 30%; /* Điều chỉnh vị trí top */
+    top: 30%; 
     left: 40%;
     transform: translateY(-50%);
     text-align: left;
@@ -506,7 +506,6 @@
       width: 100%;
     }
   
-    /* Sửa layout team-member trong banner 4 */
     .swiper-slide#banner4 .team-members {
       display: grid; 
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -534,17 +533,16 @@
       font-size: 0.8rem; 
     }
   
-    /* Điều chỉnh chiều cao của banner 4 */
     .swiper-slide#banner4 {
       height: auto; 
     }
   
     .swiper-slide {
-        position: relative; /* Sử dụng position relative */
+        position: relative; 
         display: flex;
-        align-items: flex-start; /* Căn chỉnh các mục về đầu */
+        align-items: flex-start; 
         justify-content: center; 
-        flex-direction: column; /* Sắp xếp theo cột */
+        flex-direction: column; 
         overflow: visible; 
       }
     
@@ -552,10 +550,9 @@
         width: 100%;
         height: auto;
         margin-right: 0;
-        margin-bottom: 20px; /* Thêm khoảng cách dưới hình ảnh */
+        margin-bottom: 20px; 
       }
     
-      /* Chỉ định các banner cần điều chỉnh, trừ banner 4 */
   .swiper-slide#banner1,
   .swiper-slide#banner2,
   .swiper-slide#banner3,
@@ -568,7 +565,6 @@
     overflow: visible; 
   }
 
-  /* Chỉ áp dụng cho các banner đã chỉ định */
   .swiper-slide#banner1 img,
   .swiper-slide#banner2 img,
   .swiper-slide#banner3 img,
@@ -579,7 +575,6 @@
     margin-bottom: 20px; 
   }
 
-  /* Chỉ áp dụng cho các banner đã chỉ định */
   .swiper-slide#banner1 .banner-text,
   .swiper-slide#banner2 .banner-text,
   .swiper-slide#banner3 .banner-text,
@@ -592,11 +587,10 @@
     margin-top: 0; 
   }
 
-  /* Thêm padding-top cho banner-text (trừ banner 4) */
   .swiper-slide#banner1 .banner-text,
   .swiper-slide#banner2 .banner-text,
   .swiper-slide#banner3 .banner-text,
   .swiper-slide#banner5 .banner-text {
-    padding-top: 60px; /* Hoặc một giá trị phù hợp */
+    padding-top: 60px; 
   }
   }

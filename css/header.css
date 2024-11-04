@@ -415,6 +415,7 @@ header>.navigation_header_container {
     .site-nav-list a {
       color: white; 
       font-size: 1.2rem;
+      padding: 5px 0 !important;
     }
   
     .additionalMenus {
@@ -424,6 +425,7 @@ header>.navigation_header_container {
     .product_submenu,
     .socialImpact_submenu {
       position: static;
+      left: 0;
       width: 100%;
       grid-template-columns: 1fr;
       padding: 1rem;
