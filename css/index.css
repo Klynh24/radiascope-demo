@@ -153,6 +153,12 @@ section.site-content-hero {
   z-index: -1;
 }
 
+.photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hoặc object-fit: contain; tùy thuộc vào cách bạn muốn hình ảnh hiển thị */
+}
+
 #photo1 {
   background: #0F67B1;
   aspect-ratio: 16/9;
