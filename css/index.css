@@ -239,7 +239,7 @@ section.site-content-hero {
     overflow-wrap: break-word;
     hyphens: auto;
     width: 79%; 
-    margin: 0 auto 1rem; 
+    margin: 0 auto 0.5rem; 
   }
 
   .site-content-gallery {
@@ -252,4 +252,10 @@ section.site-content-hero {
   .explore-button {
     margin-bottom: 20px; 
   }
+
+  .site-content-hero > div:first-child > p  {
+    /* margin-left: 0 !important; */
+  }
+
+
 }
